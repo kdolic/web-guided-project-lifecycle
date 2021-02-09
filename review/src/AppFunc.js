@@ -5,14 +5,14 @@ const AppFunc = () => {
   const handleClick = () => {
     setName("Allison");
   };
-  console.log("APPFUNC: Component Constructed");
+  console.log("APPFUNC: Component Constructed - 1st render starting");
 
   useEffect(()=>{
-    console.log("APPFUNC: Component Mounted");
+    console.log("APPFUNC: Component Mounted - Part of 1st render");
   }, []);
 
   useEffect(()=>{
-    console.log("APPFUNC: Component Updated");
+    console.log("APPFUNC: Component Updated - Part of 1st render, and all other renders");
   });
 
   console.log("APPFUNC: Component Rendered");
